@@ -6,8 +6,8 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: lightblue;
-    color: rgb(42, 6, 69);
+    background-color: rgb(107, 195, 224);
+    color: rgb(31, 5, 71);
     line-height: 1.6;
     padding: 20px;
 }
@@ -33,7 +33,7 @@ main {
 
 /* All boxes use this same style */
 .box {
-    background-color: lavender;
+    background-color: violet;
     border: 3px solid #3d056d;
     border-radius: 20px;
     padding: 35px;
