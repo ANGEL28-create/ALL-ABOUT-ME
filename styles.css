@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    color: aquamarine;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: plum;
+    color: darkmagenta;
+    color: blueviolet;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* All boxes use this same syle */
+.box {
+    background-color: lavender;
+    border: 3px solid #3d056d;
+    border-radius: 20px;
+    padding: 35px;
+    margin: 25px auto;
+    text-align: center;
+    box-shadow: 0 8px 25px darkmagenta;
+    transition: all 0.3s ease
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px darkmagenta;
+}
+
+.box h2 {
+    color: violet;
+    margin-bottom: 15px;
+}
+
+/* Scroll Animation */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animation for 4 boxes */
+.box:nth-child(1) {transition-delay: 0.05s; }
+.box:nth-child(2) {transition-delay: 0.15s; }
+.box:nth-child(3) {transition-delay: 0.25s; }
+.box:nth-child(4) {transition-delay: 0.35s; }
